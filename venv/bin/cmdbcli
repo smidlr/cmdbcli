@@ -1,0 +1,10 @@
+#!/home/radek.smidl/work/cliff/venv/bin/python2
+# EASY-INSTALL-ENTRY-SCRIPT: 'cmdbcli==0.1.1','console_scripts','cmdbcli'
+__requires__ = 'cmdbcli==0.1.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('cmdbcli==0.1.1', 'console_scripts', 'cmdbcli')()
+    )

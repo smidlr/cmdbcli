@@ -1,0 +1,61 @@
+Metadata-Version: 1.1
+Name: cmdbcli
+Version: 0.1.0
+Summary: CLI for CMDB
+Home-page: https://github.com/smidlr/cmdbcli
+Author: Radek Smidl
+Author-email: radek.smidl@gooddata.com
+License: UNKNOWN
+Download-URL: https://github.com/smidlr/cmdbcli/tarball/master
+Description: =================
+         Running cmdbcli
+        =================
+        
+        Setup
+        -----
+        
+        First, you need to create a virtual environment and activate it.
+        
+        .. code:: bash
+        
+          $ mkdir cmdbcli && cd cmdbcli
+          $ pip install virtualenv
+          $ virtualenv venv
+          $ . venv/bin/activate
+          (venv)$ 
+        
+        Next, install requirements.
+        
+        .. code:: bash
+        
+          (venv)$ pip install -r requirements.txt
+        
+        
+        Usage
+        -----
+        
+        TBD
+        
+        
+        Cleaning Up
+        -----------
+        
+        Finally, when done, deactivate your virtual environment:
+        
+        .. code:: bash
+        
+          (venv)$ deactivate
+          $
+        
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX

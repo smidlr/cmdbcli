@@ -1,0 +1,11 @@
+[cmdbcli]
+file = cmdbcli.show:File
+files = cmdbcli.list:Files
+list files = cmdbcli.list:Files
+show file = cmdbcli.show:File
+simple = cmdbcli.simple:Simple
+unicode = cmdbcli.encoding:Encoding
+
+[console_scripts]
+cmdb = cmdbcli.__main__:main
+
