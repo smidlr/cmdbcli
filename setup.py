@@ -1,22 +1,16 @@
 #!/usr/bin/env python
 
 PROJECT = 'cmdbcli'
-
 VERSION = '0.1.0'
 
 from setuptools import setup, find_packages
-
-try:
-    long_description = open('README.rst', 'rt').read()
-except IOError:
-    long_description = ''
 
 setup(
     name=PROJECT,
     version=VERSION,
 
     description='CLI for CMDB',
-    long_description=long_description,
+    long_description='CLI tool for interacting with GDC CMDB application.',
 
     author='Radek Smidl',
     author_email='radek.smidl@gooddata.com',
