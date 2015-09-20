@@ -1,11 +1,10 @@
 import logging
-import os
-import requests
+import utils
 
 from cliff.lister import Lister
 
 
-class Items(Lister):
+class ItemList(Lister):
     """
     List items from CMDB
     """
@@ -13,6 +12,7 @@ class Items(Lister):
     log = logging.getLogger(__name__)
 
     def take_action(self, parsed_args):
-        return (('Name', 'Size'),
-                ((n, os.stat(n).st_size) for n in os.listdir('.'))
+        items = utils.cmdb_get()
+        return (('Id', 'Name'),
+                ((i['id'], i['name']) for i in items['objects'])
                 )

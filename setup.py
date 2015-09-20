@@ -47,12 +47,12 @@ setup(
             'cmdb = cmdbcli.__main__:main'
         ],
         'cmdbcli': [
-            'simple = cmdbcli.simple:Simple',
-            'list files = cmdbcli.list:Files',
-            'files = cmdbcli.list:Files',
-            'file = cmdbcli.show:File',
-            'show file = cmdbcli.show:File',
-            'unicode = cmdbcli.encoding:Encoding',
+            'list = cmdbcli.node:NodeList',
+            'show = cmdbcli.node:NodeShow',
+            'item list = cmdbcli.general:List',
+            'item show = cmdbcli.general:Show',
+            'property list = cmdbcli.general:List',
+            'property show = cmdbcli.general:Show',
         ],
     },
 
