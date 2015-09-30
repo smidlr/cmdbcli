@@ -49,9 +49,9 @@ setup(
         'cmdbcli': [
             'list = cmdbcli.node:NodeList',
             'show = cmdbcli.node:NodeShow',
-            'item list = cmdbcli.general:List',
+            'item list = cmdbcli.general:ItemList',
             'item show = cmdbcli.general:Show',
-            'property list = cmdbcli.general:List',
+            'property list = cmdbcli.general:PropertyList',
             'property show = cmdbcli.general:Show',
         ],
     },

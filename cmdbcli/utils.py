@@ -32,9 +32,12 @@ class Api():
 
         r = requests.get(complete_url, auth=(self.username, self.password))
         self.log.debug('status code: {}'.format(r.status_code))
+        r.raise_for_status()
         return r.json()
 
 
 def pretty_value(value):
     # return pprint.pformat(value).replace('u\'', '\'')
-    return json.dumps(value, indent=None)
+    if isinstance(value, (list, dict)):
+        return json.dumps(value, indent=None)
+    return value

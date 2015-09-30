@@ -1,0 +1,3 @@
+export CMDB_URL=http://127.0.0.1:8081/api/v1/
+export CMDB_USER=root
+export CMDB_PASSWORD=cmdb
